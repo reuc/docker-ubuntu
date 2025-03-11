@@ -16,7 +16,7 @@ SHELL ["/bin/bash", "-c"]
 
 # Set environment variables (optional)
 ENV DEBIAN_FRONTEND=noninteractive \
-    TZ=UTC0
+    TZ=Etc/GMT
 
 # Define a working directory
 WORKDIR /app
