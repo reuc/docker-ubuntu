@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y \
     curl \
     nano \
     git \
+    software-properties-common \ 
+    vim-common \
     && add-apt-repository ppa:deadsnakes/ppa \
     && apt-get update && apt-get install -y python3.10 python3.10-venv python3.10-dev \
     && rm -rf /var/lib/apt/lists/*
