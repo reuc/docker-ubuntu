@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \ 
     vim-common \
     && add-apt-repository ppa:deadsnakes/ppa \
-    && apt-get update && apt -y python3.10 python3.10-venv python3.10-dev  python3-pip \
+    && apt update && apt install -y python3.10 python3.10-venv python3.10-dev python3-pip \
     && apt-get upgrade -fy \ 
     && rm -rf /var/lib/apt/lists/*
 
