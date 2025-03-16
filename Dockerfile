@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y \
     software-properties-common \ 
     vim-common \
     && add-apt-repository ppa:deadsnakes/ppa \
-    && apt-get update && apt-get install -y python3.10 python3.10-venv python3.10-dev \
+    && apt-get update && apt-get install -y python3.10 python3.10-venv python3.10-dev  python3-pip\
     && rm -rf /var/lib/apt/lists/*
 
 # Set the default shell to bash
